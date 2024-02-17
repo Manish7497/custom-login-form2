@@ -1,0 +1,80 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+.card{
+    width: 350px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 20px white;
+    transform: rotate(5deg);
+     /* bottom line overflow kakunda undalnte */
+     overflow: hidden;
+}
+.login-header{
+    padding: 20px;
+    color: white;
+    font-size: 28px;
+}
+.login-content{
+    width: 80%;
+    
+    /* margin:auto >> what ever remaining space it will apply left and right uniformly */
+    margin: auto;
+}
+.login-content-span span{
+    color: white;
+    scale: (1.5);
+}
+.login-content-span input{
+    width: 100%;
+    /* manaku input fields vere line lo vastunnai so parent container lo flex use cheyali */
+    height: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-left: 5px;
+}
+.login-content-span{
+    display: flex; align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.login-content-span input:focus{
+    border-bottom: 2px solid green;
+}
+.login-content-button button{
+    background-color: crimson;color: white;
+    border: none;outline: none;
+    border-radius:2px;
+    cursor: pointer;
+    width: 100px;height: 30px;
+    font-size: 16px;
+}
+.login-content-button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 30px;
+}
+.login-content-button button:hover{
+    scale: 1.1;
+}
+/* active eppudu hover tarvate use cheyali */
+.login-content-button button:active{
+    scale: 0.9;
+}
+.bottom-line{
+    width: 200px;height: 20px;
+    background: white;
+    transform: rotate(30deg);
+    margin-left: -35px;
+}
